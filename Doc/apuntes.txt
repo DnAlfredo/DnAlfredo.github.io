@@ -1,0 +1,2 @@
+esta carpeta sirve para guardar archivos que queremos en el github pero no queremos que nadie los vea ni los pueda cambiar
+aqui pondriamos los archivos como las password necesarias para el proyecto o los documentos internos,hay que tener cuidado que no hay actualizacion ni copias de los ignore
