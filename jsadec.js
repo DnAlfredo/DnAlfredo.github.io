@@ -1,0 +1,8 @@
+
+function carruselFotos() {
+    
+ alert("mecmec")
+      
+   
+         
+}
