@@ -20,7 +20,7 @@ a {
 }
 
 body {
-    /* background-color: var(--terciario);*/
+background-color: var(--terciario);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
