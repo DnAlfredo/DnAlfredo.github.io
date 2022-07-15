@@ -5,6 +5,7 @@
     --borde: black;
     --sombra: rgb(182, 186, 101);
     --terciario: rgba(141, 149, 14, 0.3);
+    --hover:rgba(141, 149, 14, 0.6);
 }
 
 * {
@@ -39,12 +40,11 @@ background-color: var(--terciario);
 /*@media screen(min-width: 320px) and (max-width: 480px) {
     
 }*/
-
 .logo {
     width: 15%;
     height: 50%;
     grid-area: header;
-    z-index: 2;
+    
     position: relative;
     box-shadow: 0.5vh 0.5vh 0.5vh var(--sombra);
     border-radius: 35%;
@@ -62,23 +62,20 @@ background-color: var(--terciario);
 }
 .menusociales{
     position: absolute;
-    top: 10%;
+    top: 5%;
     right: 0%;
     display: flex;
-    width: 15%;
+    width: 23%;
     height: 20%;
-    justify-content: right;
-    
-    
-
+    justify-content: space-around;
 }
 .iconsocial{
-    width: 2rem;
-    height: 2rem;
+    width: 70%;
+    height: 85%;
     display: flex;
     justify-content: right;
     position: relative;
-    margin: 0.5rem;
+    margin: 0.5vh;
 }
 .barranav {
     width: 100%;
@@ -87,7 +84,7 @@ background-color: var(--terciario);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 10vh;
+    margin-top: 12vh;
     background-color: var(--primario);
     box-shadow: 1vh 1vh 1vh var(--sombra);
     padding: 1vh;
@@ -111,7 +108,141 @@ background-color: var(--terciario);
 }
 /*----------------------------------------------MAIN INDEX--------------------------------------------------------------*/
 .mainpresentacion{
-    height: 1000px;
-
+      
+    display: block;
+    justify-content: center;
+    align-items: center;
     
 }
+
+.divpresentacion{
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.divpresentacion ul{
+    text-align: left;
+}
+
+/*--------------------------------GALERIA FOTOS-------------------------------------------------*/
+#marco_galeria {
+    position: static;
+    height: 25rem;
+    border: 1px solid var(--borde);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--terciario);
+    margin-bottom: 2rem;
+
+}
+
+#divimg_galeria {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#img_galeria {
+    width: 30rem;
+    height: 20rem;
+    border-radius: 10px;
+}
+
+.botongaleria {
+    
+    width: 4rem;
+    height: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color:var(--secundario);
+    font-size: large;
+    user-select: none;
+   justify-content: center;
+   align-items: center;
+  text-align: center;
+    display: flex;
+    padding: 0.5rem;
+    
+    
+}
+
+#botones_mini {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    user-select: none; 
+    margin-bottom: 2rem;
+}
+
+#boton_inicio {
+    width: 30rem;
+    height: 3rem;
+    user-select: none;
+    
+    /*con esta propiedad hacemos que el texto del div no sea seleccionable en la pantalla, ojo, aparece en el codigo fuente, 
+  solo es algo estético*/
+
+}
+
+#boton_inicio:hover {
+    background-color: var(--hover);
+    
+}
+
+#flecha_der:hover {
+    background-color: var(--hover);
+}
+
+#flecha_iz:hover {
+    background-color: var(--hover);
+}
+/*
+.img_mini{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 10px;
+}
+
+#icon_img1 {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid var(--borde);
+    border-radius: 10px;
+   
+
+}
+
+#icon_img2 {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid var(--borde);
+    border-radius: 10px;
+    
+}
+
+#icon_img3 {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid var(--borde);
+    border-radius: 10px;
+    
+}
+
+#icon_auto{
+    position: absolute;
+    width: 3rem;
+    height: 2.5rem;
+    border: 1px solid var(--borde);
+    border-radius: 10px;
+    background-color: var(--terciario);
+  right: 1rem;
+ 
+}
+*/
