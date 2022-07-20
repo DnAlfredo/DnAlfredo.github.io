@@ -61,17 +61,14 @@ background-color: var(--terciario);
     display: block;
 }
 .menusociales{
-    position: absolute;
-    top: 5%;
-    right: 0%;
     display: flex;
     width: 23%;
     height: 20%;
     justify-content: space-around;
 }
 .iconsocial{
-    width: 70%;
-    height: 85%;
+    width: 65%;
+    height: 75%;
     display: flex;
     justify-content: right;
     position: relative;
@@ -106,9 +103,22 @@ background-color: var(--terciario);
 .botonmenu:hover{
     background-color: var(--sombra);
 }
+/*---------------------------------------------FOOTER----------------------------------------------------------------------*/
+.contfooter{
+    display: flex;
+    min-height: 7rem;
+    justify-content: space-around;
+    align-items: center;
+    border:1px solid var(--borde);
+    box-shadow: var(--sombra);
+    background-color: var(--primario);
+
+}
+.contactofooter{
+    width: 10rem;
+}
 /*----------------------------------------------MAIN INDEX--------------------------------------------------------------*/
-.mainpresentacion{
-      
+.mainpresentacion{ 
     display: block;
     justify-content: center;
     align-items: center;
@@ -124,125 +134,14 @@ background-color: var(--terciario);
 .divpresentacion ul{
     text-align: left;
 }
-
-/*--------------------------------GALERIA FOTOS-------------------------------------------------*/
-#marco_galeria {
-    position: static;
-    height: 25rem;
-    border: 1px solid var(--borde);
-    border-radius: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: space-between;
-    align-items: center;
-    background-color:var(--terciario);
-    margin-bottom: 2rem;
-
+.divpresentacion h2{
+  font-size: xx-large;
 }
 
-#divimg_galeria {
-    display: none;
-    justify-content: center;
-    align-items: center;
+/*---------------------------------------MAIN CONDICIONES LEGALES--------------------------------------------*/
+.condLegales{
+    padding: 0.9rem;
 }
-
-#img_galeria {
-    width: 30rem;
-    height: 20rem;
-    border-radius: 10px;
+.condLegales h2,p,h3{
+     padding: 0.5rem;
 }
-
-.botongaleria {
-    
-    width: 4rem;
-    height: 1rem;
-    border: 1px solid black;
-    border-radius: 10px;
-    background-color:var(--secundario);
-    font-size: large;
-    user-select: none;
-   justify-content: center;
-   align-items: center;
-  text-align: center;
-    display: flex;
-    padding: 0.5rem;
-    
-    
-}
-
-#botones_mini {
-    position: absolute;
-    bottom: 0%;
-    width: 100%;
-    display: none;
-    justify-content: center;
-    user-select: none; 
-    margin-bottom: 2rem;
-}
-
-#boton_inicio {
-    width: 30rem;
-    height: 3rem;
-    user-select: none;
-    
-    /*con esta propiedad hacemos que el texto del div no sea seleccionable en la pantalla, ojo, aparece en el codigo fuente, 
-  solo es algo estético*/
-
-}
-
-#boton_inicio:hover {
-    background-color: var(--hover);
-    
-}
-
-#flecha_der:hover {
-    background-color: var(--hover);
-}
-
-#flecha_iz:hover {
-    background-color: var(--hover);
-}
-/*
-.img_mini{
-    width: 2rem;
-    height: 2rem;
-    border-radius: 10px;
-}
-
-#icon_img1 {
-    width: 2rem;
-    height: 2rem;
-    border: 1px solid var(--borde);
-    border-radius: 10px;
-   
-
-}
-
-#icon_img2 {
-    width: 2rem;
-    height: 2rem;
-    border: 1px solid var(--borde);
-    border-radius: 10px;
-    
-}
-
-#icon_img3 {
-    width: 2rem;
-    height: 2rem;
-    border: 1px solid var(--borde);
-    border-radius: 10px;
-    
-}
-
-#icon_auto{
-    position: absolute;
-    width: 3rem;
-    height: 2.5rem;
-    border: 1px solid var(--borde);
-    border-radius: 10px;
-    background-color: var(--terciario);
-  right: 1rem;
- 
-}
-*/

@@ -18,3 +18,78 @@
     45%{top: 27.5%;}50%{top: 25%;}55%{top: 22.5%;}60%{top: 20%;}65%{top: 17.5%;}70%{top: 15%;}75%{top: 12.5%;}80%{top: 10%;}
     85%{top: 7.5%;}90%{top: 5%;}95%{top: 2.5%;}100%{top: 0%;}
 }
+/*--------------------------------GALERIA FOTOS-------------------------------------------------*/
+#marco_galeria {
+    position: static;
+    height: 25rem;
+    border: 1px solid var(--borde);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--terciario);
+    margin-bottom: 2rem;
+
+}
+
+#divimg_galeria {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#img_galeria {
+    width: 30rem;
+    height: 20rem;
+    border-radius: 10px;
+}
+
+.botongaleria {
+    width: 4rem;
+    height: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color:var(--secundario);
+    font-size: large;
+    user-select: none;
+   justify-content: center;
+   align-items: center;
+  text-align: center;
+    display: flex;
+    padding: 0.5rem; 
+}
+
+#botones_mini {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    user-select: none; 
+    margin-bottom: 2rem;
+}
+
+#boton_inicio {
+    width: 30rem;
+    height: 3rem;
+    user-select: none;
+    
+    /*con esta propiedad hacemos que el texto del div no sea seleccionable en la pantalla, ojo, aparece en el codigo fuente, 
+  solo es algo estético*/
+
+}
+
+#boton_inicio:hover {
+    background-color: var(--hover);
+    
+}
+
+#flecha_der:hover {
+    background-color: var(--hover);
+}
+
+#flecha_iz:hover {
+    background-color: var(--hover);
+}
