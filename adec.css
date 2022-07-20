@@ -4,7 +4,7 @@
     --secundario: rgb(222, 219, 88);
     --borde: black;
     --sombra: rgb(182, 186, 101);
-    --terciario: rgba(141, 149, 14, 0.3);
+    --terciario: /*rgba(141, 149, 14, 0.3)*/white;
     --hover:rgba(141, 149, 14, 0.6);
 }
 
@@ -41,7 +41,7 @@ background-color: var(--terciario);
     
 }*/
 .logo {
-    width: 15%;
+    width: 15vw;
     height: 50%;
     grid-area: header;
     
@@ -81,7 +81,7 @@ background-color: var(--terciario);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 12vh;
+    margin-top: 40px;
     background-color: var(--primario);
     box-shadow: 1vh 1vh 1vh var(--sombra);
     padding: 1vh;
@@ -112,10 +112,24 @@ background-color: var(--terciario);
     border:1px solid var(--borde);
     box-shadow: var(--sombra);
     background-color: var(--primario);
-
 }
 .contactofooter{
     width: 10rem;
+}
+.condlegales{
+    width: 15rem;
+    display: block;
+    
+}
+.condlegales a {
+    color: red;
+    border: 1px solid var(--borde);
+    background-color: var(--secundario);
+    border-radius: 10px;
+    padding:0.5rem;
+}
+.condlegales a:hover{
+background-color: var(--sombra);
 }
 /*----------------------------------------------MAIN INDEX--------------------------------------------------------------*/
 .mainpresentacion{ 
@@ -139,9 +153,9 @@ background-color: var(--terciario);
 }
 
 /*---------------------------------------MAIN CONDICIONES LEGALES--------------------------------------------*/
-.condLegales{
+.avisolegal{
     padding: 0.9rem;
 }
-.condLegales h2,p,h3{
+.avisolegal h2,p,h3{
      padding: 0.5rem;
 }
