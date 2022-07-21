@@ -1,11 +1,13 @@
 /*--------------------------------------------GENERALES------------------------------------------------------------*/
 :root {
-    --primario: rgb(141, 149, 14);
+    --primario: #8d950e;
     --secundario: rgb(222, 219, 88);
-    --borde: black;
-    --sombra: rgb(182, 186, 101);
-    --terciario: /*rgba(141, 149, 14, 0.3)*/white;
-    --hover:rgba(141, 149, 14, 0.6);
+    --borde:1px solid white;
+    --sombra: rgba(141, 149, 14, 0.6);
+    --terciario: /*white*/ rgba(141, 149, 14, 0.3);
+    --complementario:white;
+    --hover:rgb(182, 186, 101);
+    --radius:10px;
 }
 
 * {
@@ -44,16 +46,16 @@ background-color: var(--terciario);
     width: 15vw;
     height: 50%;
     grid-area: header;
-    
+    border-radius: 15px;
     position: relative;
-    box-shadow: 0.5vh 0.5vh 0.5vh var(--sombra);
-    border-radius: 35%;
+    box-shadow:1vh 1vh 1vh var(--sombra);
+    
 
 }
 .imglogo {
     width: 100%;
     height: 100%;
-    border-radius: 35%;
+    border-radius: 15px;
 
 }
 .menustiky{
@@ -83,9 +85,10 @@ background-color: var(--terciario);
     align-items: center;
     margin-top: 40px;
     background-color: var(--primario);
-    box-shadow: 1vh 1vh 1vh var(--sombra);
+    box-shadow:1vh 1vh 1vh var(--sombra);
     padding: 1vh;
     border-radius: 5px;
+    
 }
 
 .botonmenu {
@@ -94,14 +97,14 @@ background-color: var(--terciario);
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid var(--borde);
+   border:1px solid white;
     padding: 0.5vh;
-    border-radius: 15px;
+    border-radius: var(--radius);
     background-color: var(--secundario);
     text-align: center;
 }
 .botonmenu:hover{
-    background-color: var(--sombra);
+    background-color: var(--hover);
 }
 /*---------------------------------------------FOOTER----------------------------------------------------------------------*/
 .contfooter{
@@ -109,8 +112,8 @@ background-color: var(--terciario);
     min-height: 7rem;
     justify-content: space-around;
     align-items: center;
-    border:1px solid var(--borde);
-    box-shadow: var(--sombra);
+   /* border:var(--borde);*/
+    box-shadow:1vh 1vh 1vh var(--sombra);
     background-color: var(--primario);
 }
 .contactofooter{
@@ -123,13 +126,13 @@ background-color: var(--terciario);
 }
 .condlegales a {
     color: red;
-    border: 1px solid var(--borde);
+    border: var(--borde);
     background-color: var(--secundario);
-    border-radius: 10px;
+    border-radius: var(--radius);
     padding:0.5rem;
 }
 .condlegales a:hover{
-background-color: var(--sombra);
+background-color: var(--hover);
 }
 /*----------------------------------------------MAIN INDEX--------------------------------------------------------------*/
 .mainpresentacion{ 
@@ -144,6 +147,8 @@ background-color: var(--sombra);
     justify-content: center;
     align-items: center;
     text-align: center;
+    border:var(--borde);
+    background-color: var();
 }
 .divpresentacion ul{
     text-align: left;
@@ -158,4 +163,15 @@ background-color: var(--sombra);
 }
 .avisolegal h2,p,h3{
      padding: 0.5rem;
+}
+/*-----------------------------------------POLITICA DE PRIVACIDAD-------------------------------------------------------------*/
+.botondescarga{
+    width:8vw;
+    border: var(--borde);
+    background-color: var(--secundario);
+    border-radius: var(--radius);
+    text-align: center;
+}
+.botondescarga:hover{
+  background-color: var(--hover);
 }
