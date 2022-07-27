@@ -114,7 +114,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 1px solid white;
+    border: var(--borde);
     border-radius: var(--radius);
     background-color: var(--secundario);
   
@@ -207,6 +207,7 @@ body {
     justify-content: center;
     margin-bottom: 10px;
 }
+
 .divpresentacion ul {
     text-align: left;
 }
@@ -266,4 +267,7 @@ h3 {
 figure img{
     width: 11rem;
     margin: 5px;
+}
+.polcalidad img{
+    width: 7rem;
 }
