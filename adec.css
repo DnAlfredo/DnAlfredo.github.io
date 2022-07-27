@@ -160,6 +160,7 @@ body {
 /*----------------------------------------------MAIN INDEX--------------------------------------------------------------*/
 .mainpresentacion {
     display: block;
+    align-items: center;
    
 }
 
@@ -179,7 +180,33 @@ body {
      margin: 10px;
      padding: 2vh;
 }
+.contmiembros{
+    width: 49%;
+   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: var(--sombra);
+    border-radius: var(--radius);
+    background-color: var(--complementario);
+     margin: 10px;
+     padding: 2vh;
+}
 
+.fichamiembro{
+    width: 8rem;
+    margin: 15px; 
+}
+.contmiembros h2{
+    height: 8rem;
+    border: var(--borde);
+    border-radius: var(--radius);
+    background-color: var(--secundario);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
 .divpresentacion ul {
     text-align: left;
 }
@@ -194,8 +221,6 @@ body {
     align-items: center;
     justify-content: center;
 }
-
-
 
 /*---------------------------------------MAIN CONDICIONES LEGALES--------------------------------------------*/
 .avisolegal {
@@ -229,13 +254,16 @@ h3 {
 
 }
 .fichaenlaces{
-    width: 17%;
+    width: 19%;
+    height: 20%;
     text-align: center;
     border: var(--borde);
     box-shadow:1vh 1vh 1vh var(--sombra);
     background-color: var(--complementario);
     border-radius: var(--radius);
+    margin: 10px;
 }
 figure img{
-    width: 9rem;
+    width: 11rem;
+    margin: 5px;
 }
