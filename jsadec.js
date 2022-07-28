@@ -1,4 +1,4 @@
-let coleccionfotos = ['./multimediaAdec/imgabs.webp ', './multimediaAdec/imgabs2.webp', './multimediaAdec/logo-ADEC-provisional.jpg']
+let coleccionfotos = ['./multimediaAdec/imgsociosadec.jpg ','./multimediaAdec/imgsociosadec2.jpg','./multimediaAdec/imgsociosadec3.jpg']
 let posicion = 0
 let intervalo
 let interruptor = false
@@ -6,7 +6,7 @@ let interruptor = false
 function muestraImg(id) {
 
     let img = document.getElementById('img_galeria')
-    img.src = './multimediaAdec/imgabs.webp '
+    img.src = './multimediaAdec/imgsociosadec.jpg'
     document.getElementById('divimg_galeria').style.display = "flex"
     document.getElementById('botones_mini').style.display = "flex"
     document.getElementById('boton_inicio').style.display = "none"

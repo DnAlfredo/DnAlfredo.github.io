@@ -23,7 +23,7 @@
 
 * {
     box-sizing: border-box;
-   
+   margin: 0%;
 }
 
 a {
@@ -159,8 +159,12 @@ body {
 
 /*----------------------------------------------MAIN INDEX--------------------------------------------------------------*/
 .mainpresentacion {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+  align-content: center;
+
 
 }
 
@@ -178,7 +182,7 @@ body {
     border-radius: var(--radius);
     background-color: var(--complementario);
     margin: 10px;
-    padding: 2vh;
+    padding: 1vh;
 }
 
 .contindex {
@@ -205,15 +209,14 @@ body {
     
 }
 .contmiembros {
-   
-    justify-content: center;
     align-items: center;
     text-align: center;
     border: var(--sombra);
     border-radius: var(--radius);
     background-color: var(--complementario);
-      margin: 15px;
-    padding: 2vh;
+     margin: 10px;
+     padding: 1vh;
+    
 }
 .contmiembros img{
      margin: 10px;
@@ -228,7 +231,7 @@ body {
     flex: auto;
 }
 .divcolaboradores {
-    width: 50%;
+    width: 70%;/*aqui se puede poner */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -238,7 +241,7 @@ body {
     border-radius: var(--radius);
     background-color: var(--complementario);
     margin: 10px;
-    padding: 2vh;
+    padding: 1vh;
     
 }
 
@@ -252,7 +255,7 @@ body {
     
 }
 .calidadindex{
-    width: 50%;
+    width: 30%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -263,16 +266,18 @@ body {
     border-radius: var(--radius);
     background-color: var(--complementario);
     margin: 10px;
-    padding: 2vh;
+    padding: 1vh;
 }
 .imgoca{
-    width: 8rem;
-    height: 8rem;
-    border: var(--borde);
-    box-shadow: var(--sombra);
+    
+    width: 4rem;
+    height: 4rem;
+    right: 0%;
+    box-shadow:1vh 1vh 1vh var(--sombra);
     background-color: gray;
     border-radius: var(--radius);
 }
+
 .divpresentacion ul {
     text-align: left;
 }
@@ -330,6 +335,10 @@ h3 {
     background-color: var(--complementario);
     border-radius: var(--radius);
     margin: 10px;
+    transition: width 1s;
+}
+.fichaenlaces:hover{
+   width: 24%;
 }
 
 figure img {
