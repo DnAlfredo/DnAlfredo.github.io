@@ -2,7 +2,8 @@
 :root {
     --primario: #8d950e;
     --secundario: rgb(222, 219, 88);
-    --borde: 1px solid white;
+   /* --borde: 2px solid white;-------se puede hacer con o sin borde*/
+    --borde_oscuro:1px solid #8d950e;
     --sombra: rgba(141, 149, 14, 0.6);
     --terciario:
         /*white*/
@@ -10,6 +11,9 @@
     --complementario: white;
     --hover: rgb(182, 186, 101);
     --radius: 10px;
+    --interlineado:150%;
+    --padding_tit:5px;
+    --padding_txt:10px;
     /*
     --primario: #1A87E8;
     --secundario: #dedb58  #8d950e;
@@ -45,6 +49,7 @@ body {
     flex-wrap: nowrap;
     position: sticky;
     top: 0%;
+    z-index: 2;
     animation-name: animelogo;
     animation-duration: 1s;
 
@@ -133,24 +138,32 @@ body {
     /* border:var(--borde);*/
     box-shadow: 1vh 1vh 1vh var(--sombra);
     background-color: var(--primario);
+    margin-top: 20px;
+    
 }
 
 .contactofooter {
-    width: 10rem;
-}
-
-.condlegales {
     width: 15rem;
-    display: block;
-
-}
-
-.condlegales a {
     color: darkblue;
     border: var(--borde);
     background-color: var(--secundario);
     border-radius: var(--radius);
+    text-align: center;
     padding: 0.5rem;
+}
+.contactofooter:hover{
+    background-color: var(--hover);
+}
+
+.condlegales a{
+    display: inline-block;
+
+    color: darkblue;
+    border: var(--borde);
+    background-color: var(--secundario);
+    border-radius: var(--radius);
+    padding: 1.5vh;
+    
 }
 
 .condlegales a:hover {
@@ -177,31 +190,36 @@ body {
 }
 
 .contpresentacion {
+    display: block;
     width: 50%;
-    border: var(--sombra);
+    border: var(--borde);
+    box-shadow:1vh 1vh 1vh var(--sombra);
     border-radius: var(--radius);
     background-color: var(--complementario);
     margin: 10px;
-    padding: 1vh;
+    padding:var(--padding_tit);
+    line-height: 150%;
+}
+.contpresentacion p{
+    padding: var(--padding_txt);
 }
 
 .contindex {
-
     display: block;
-
-
 }
 
 .contindex h2 {
     width: 100%;
     height: 8rem;
-    border: var(--borde);
+    border:var(--borde);
     border-radius: var(--radius);
     background-color: var(--secundario);
+    box-shadow: 0.5vh 0.5vh 0.5vh var(--sombra);
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
+    padding: var(--padding_tit);
 }
 
 .contindex figcaption {
@@ -212,13 +230,15 @@ body {
 }
 
 .contmiembros {
+    display: block;
     align-items: center;
     text-align: center;
-    border: var(--sombra);
+    border: var(--borde);
     border-radius: var(--radius);
     background-color: var(--complementario);
+    box-shadow: 1vh 1vh 1vh var(--sombra);
     margin: 10px;
-    padding: 1vh;
+    padding: var(--padding_tit);
 
 }
 
@@ -245,11 +265,12 @@ body {
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    border: var(--sombra);
+    border: var(--borde);
+   box-shadow: 1vh 1vh 1vh var(--sombra);
     border-radius: var(--radius);
     background-color: var(--complementario);
     margin: 10px;
-    padding: 1vh;
+    padding: var(--padding_tit);
 
 }
 
@@ -261,6 +282,7 @@ body {
     width: 10rem;
     font-size: small;
     text-align: justify;
+    padding-bottom: 2vh;
 
 }
 
@@ -272,11 +294,12 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: var(--sombra);
+   box-shadow: 1vh 1vh 1vh var(--sombra);
     border-radius: var(--radius);
     background-color: var(--complementario);
     margin: 10px;
-    padding: 1vh;
+    padding: var(--padding_tit);
+    padding-bottom: 2vh;
 }
 
 .imgoca {
@@ -296,36 +319,50 @@ body {
 .divpresentacion h2,
 .divpresentacion h3 {
     height: 8rem;
-    border: var(--borde);
-    border-radius: var(--radius);
-    background-color: var(--secundario);
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: center;
+    border: var(--borde);
+    box-shadow: 1vh 1vh 1vh var(--sombra);
+    border-radius: var(--radius);
+    background-color: var(--secundario);
+    
 }
 
 /*---------------------------------------MAIN CONDICIONES LEGALES--------------------------------------------*/
 .avisolegal {
     width: 100%;
     padding: 0.9rem;
+    line-height: var(--interlineado);
 }
-
+.avisolegal h1{
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 10px;
+}
+.avisolegal p{
+    line-height: var(--interlineado);
+}
 
 .avisolegal h2,
 .avisolegal p,
 .avisolegal h3 {
     width: auto;
     padding: 0.5rem;
+
 }
 
 /*-----------------------------------------POLITICA DE PRIVACIDAD-------------------------------------------------------------*/
-.botondescarga {
+.botondescarga {  
+    width: 85px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 80px;
-    height: 80px;
+    font-size: small;
+  
     border: var(--borde);
     background-color: var(--secundario);
     border-radius: var(--radius);
@@ -357,7 +394,7 @@ body {
 }
 
 .fichaenlaces:hover {
-    width: 24%;
+    opacity: 0.5;
 }
 
 figure img {
@@ -366,8 +403,7 @@ figure img {
 }
 
 /*--------------------------------------------------------POLITICA DE CALIDAD---------------------------------------------------------------------------*/
-.txtcalidad,
-.calidad {
+.txtcalidad{
     width: 95%;
     text-align: justify;
     border: var(--borde);
@@ -376,6 +412,7 @@ figure img {
     border-radius: var(--radius);
     padding: 2vh;
     margin-bottom: 10px;
+    line-height: var(--interlineado);
 }
 .calidad{
      width: 100%;
@@ -384,8 +421,9 @@ figure img {
     background: var(--complementario);
     margin: auto;
     border-radius: var(--radius);
-    padding: 2vh;
+    padding: 1.5vh;
     margin-bottom: 10px;
+    line-height: var(--interlineado);
 }
 
 .txtcalidad h1,
@@ -395,10 +433,12 @@ figure img {
 }
 
 .calidad h2 {
+    width: 100%;
+    height: 7vh;
     text-align: center;
     background-color: var(--secundario);
     border-radius: var(--radius);
-    padding: 1vh;
+    padding: 1.5vh;
 }
 .orgcalidad{
     display: block;
@@ -420,7 +460,6 @@ figure img {
 }
 .trescalidad{
     display: flex;
-   ;
     align-items: center;
     margin-left: 0%;
 }
@@ -449,12 +488,94 @@ figure img {
     text-align: center;
     width: 80px;
     height: 80px;
+    font-size: small;
     border: var(--borde);
     background-color: var(--secundario);
     border-radius: var(--radius);
-  
     margin: auto;
 }
 .botondescargacalidad:hover{
+    background-color: var(--hover);
+}
+/*----------------------------------------------CONOCENOS---------------------------------------------------------------------*/
+.fichaconoce{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.adecfichaconoce,
+.misionconoce,
+.objconoce,
+.fichacolabora,
+.fichasocio,
+.fichaloteria{
+    width: 100%;
+    border:var(--borde);
+    border-radius: var(--radius);
+    background-color: var(--complementario);
+    box-shadow:1vh 1vh 1vh var(--sombra);
+    margin: 10px;
+    padding:var(--padding_tit);
+}
+.titfichaconoce,
+.titconoce,
+.titfichasocio,
+.titloteria{
+    width: 100%;
+    height: 8rem;
+    border: var(--borde);
+    border-radius: var(--radius);
+    background-color: var(--secundario);
+    box-shadow: 0.5vh 0.5vh 0.5vh var(--sombra);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    
+}
+.txtfichaconoce,
+.txtfichaconoce,
+.txtsociocolabora,
+.txtloteria{
+    line-height: var(--interlineado);
+    padding: var(--padding_txt);
+}
+.titsociocolabora{
+    width: 35%;
+    height: 4rem;
+    border-radius: var(--radius);
+    background-color: var(--secundario);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding-left: 1vh;
+    margin-bottom: 10px;
+    
+}
+.txtsociocolabora2{
+    width: 100%;
+    text-align: center;
+    line-height: var(--interlineado);
+    margin: 10px;
+}
+.contbotonsocio{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+}
+.botonsocio{
+    width: 95px;
+    border: var(--borde_oscuro);
+    background-color: var(--secundario);
+    border-radius: var(--radius);
+    box-shadow: 0.5vh 0.5vh 0.5vh var(--sombra);
+    text-align: center;
+    font-size: small;
+}
+.botonsocio:hover{
     background-color: var(--hover);
 }
