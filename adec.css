@@ -306,12 +306,15 @@ body {
 
 /*---------------------------------------MAIN CONDICIONES LEGALES--------------------------------------------*/
 .avisolegal {
+    width: 100%;
     padding: 0.9rem;
 }
 
+
 .avisolegal h2,
-p,
-h3 {
+.avisolegal p,
+.avisolegal h3 {
+    width: auto;
     padding: 0.5rem;
 }
 
